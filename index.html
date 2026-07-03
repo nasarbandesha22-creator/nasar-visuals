@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@nasar_visuals | Premium Digital Portraiture</title>
+    <meta name="description" content="Hyper-realistic character design, elite digital styling, and cinematic high-contrast art for global creators.">
+    
+    <!-- Google Fonts for Cinematic Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS v4 via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Custom Tailwind Configuration for Typography & Accents -->
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: 'Inter', sans-serif;
+            --font-display: 'Montserrat', sans-serif;
+            --color-canvas: #0a0a0a;
+            --color-surface: #121212;
+            --color-surface-light: #1e1e1e;
+        }
+        body {
+            background-color: var(--color-canvas);
+            color: #ffffff;
+            font-family: var(--font-sans);
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, .font-display {
+            font-family: var(--font-display);
+        }
+        /* Custom selection color */
+        ::selection {
+            background: rgba(255,255,255,0.2);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-white/20 selection:text-white">
+
+    <!-- ==========================================
+         1. FIXED HEADER / NAVIGATION
+    =========================================== -->
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-[#0a0a0a]/40 border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Left -->
+            <a href="#" class="text-xl font-display font-bold tracking-tight text-white hover:text-white/80 transition-colors">
+                @nasar_visuals
+            </a>
+
+            <!-- Nav Center -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-white/70 tracking-wide">
+                <a href="#gallery" class="hover:text-white transition-colors duration-300">Gallery</a>
+                <a href="#process" class="hover:text-white transition-colors duration-300">Process</a>
+                <a href="#contact" class="hover:text-white transition-colors duration-300">Contact</a>
+            </nav>
+
+            <!-- Right CTA -->
+            <a href="#contact" class="hidden sm:inline-block px-5 py-2.5 text-xs font-semibold uppercase tracking-wider border border-white/30 rounded-full hover:border-white hover:bg-white hover:text-black transition-all duration-300">
+                Commission a Portrait
+            </a>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         2. CINEMATIC HERO SECTION
+    =========================================== -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
+        <!-- Ambient Background Glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] md:w-[40vw] md:h-[40vw] bg-white/[0.03] rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10 flex flex-col items-center">
+            <!-- Hero Badging -->
+            <div class="hero-anim inline-block px-4 py-1.5 mb-8 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm text-xs font-medium tracking-widest uppercase text-white/80">
+                Premium Visual Production
+            </div>
+            
+            <!-- Main Heading -->
+            <h1 class="hero-anim text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tighter leading-[1.1] mb-6 drop-shadow-2xl">
+                Bespoke Digital <br class="hidden md:block"/> Portraiture & Visual Art
+            </h1>
+            
+            <!-- Subheading -->
+            <p class="hero-anim text-lg md:text-xl text-white/60 max-w-2xl font-light leading-relaxed mb-10">
+                Hyper-realistic character design, elite digital styling, and cinematic high-contrast art tailored for global creators.
+            </p>
+            
+            <!-- Double CTA -->
+            <div class="hero-anim flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+                <a href="#gallery" class="w-full sm:w-auto px-8 py-4 bg-white text-black font-semibold rounded-full hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] hover:scale-[1.02] transition-all duration-300 ease-out">
+                    View Master Collection
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-transparent text-white border border-white/20 font-semibold rounded-full hover:border-white hover:bg-white/5 transition-all duration-300 ease-out">
+                    Let's Talk Project
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         3. INTERACTIVE VISUAL GALLERY
+    =========================================== -->
+    <section id="gallery" class="py-24 px-6 bg-black relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 md:flex justify-between items-end">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-display font-bold tracking-tight mb-4">Master Collection</h2>
+                    <p class="text-white/50 max-w-md">Exploring the intersection of human emotion and digital precision through high-contrast chiaroscuro.</p>
+                </div>
+            </div>
+
+            <!-- PART 1: THE HERO SHOWCASE GRID -->
+            <!-- Layout: 3 columns. Items 1-9 are aspect-[4/5]. Item 10 anchors the bottom row spanning multiple columns. -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Image 1 -->
+                <div class="gallery-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                    <img src="https://i.postimg.cc/28bkXpNS/11.png" alt="Corporate Editorial & Architecture" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-700 ease-out flex flex-col justify-end p-6 md:p-8">
+                        <div class="translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                            <span class="inline-block px-4 py-2 bg-black/80 backdrop-blur-md border border-white/10 text-white/90 text-[10px] md:text-xs font-semibold tracking-widest uppercase rounded-lg shadow-2xl">
+                                Corporate Editorial & Architecture
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="gallery-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                    <img src="https://i.postimg.cc/25Cj82VS/Man-seated-introspective-setting-2K-202607032011.jpg" alt="Editorial Brand Identity" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-700 ease-out flex flex-col justify-end p-6 md:p-8">
+                        <div class="translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                            <span class="inline-block px-4 py-2 bg-black/80 backdrop-blur-md border border-white/10 text-white/90 text-[10px] md:text-xs font-semibold tracking-widest uppercase rounded-lg shadow-2xl">
+                                Editorial Brand Identity
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="gallery-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                    <img src="https://i.postimg.cc/PfmJtsRJ/Convert-to-8K-ULTRA-REALISTIC-PHOTO-202606301225.jpg" alt="Cinematic Creative Direction" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-700 ease-out flex flex-col justify-end p-6 md:p-8">
+                        <div class="translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                            <span class="inline-block px-4 py-2 bg-black/80 backdrop-blur-md border border-white/10 text-white/90 text-[10px] md:text-xs font-semibold tracking-widest uppercase rounded-lg shadow-2xl">
+                                Cinematic Creative Direction
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="gallery-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                    <img src="https://i.postimg.cc/NfkKxq8v/Subject-Character-Design-Male-202606171601-(1).jpg" alt="Chiaroscuro Masterclass Study" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-700 ease-out flex flex-col justify-end p-6 md:p-8">
+                        <div class="translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                            <span class="inline-block px-4 py-2 bg-black/80 backdrop-blur-md border border-white/10 text-white/90 text-[10px] md:text-xs font-semibold tracking-widest uppercase rounded-lg shadow-2xl">
+                                Chiaroscuro Masterclass Study
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="gallery-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                    <img src="https://i.postimg.cc/W37MqF1g/Convert-to-8K-ULTRA-REALISTIC-PHOTO-202606122054-(2).jpg" alt="Bespoke Lifestyle Production" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-700 ease-out flex flex-col justify-end p-6 md:p-8">
+                        <div class="translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                            <span class="inline-block px-4 py-2 bg-black/80 backdrop-blur-md border border-white/10 text-white/90 text-[10px] md:text-xs font-semibold tracking-widest uppercase rounded-lg shadow-2xl">
+                                Bespoke Lifestyle Production
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="gallery-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                    <img src="https://i.postimg.cc/zGd6KvVy/A-man-with-a-fit-202606041213.jpg" alt="Sartorial Character Design" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-700 ease-out flex flex-col justify-end p-6 md:p-8">
+                        <div class="translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                            <span class="inline-block px-4 py-2 bg-black/80 backdrop-blur-md border border-white/10 text-white/90 text-[10px] md:text-xs font-semibold tracking-widest uppercase rounded-lg shadow-2xl">
+                                Sartorial Character Design
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 7 -->
+                <div class="gallery-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                    <img src="https://i.postimg.cc/XYvYcZ7X/Convert-to-8K-ULTRA-REALISTIC-PHOTO-202606301446.jpg" alt="High-Fashion Editorial" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-700 ease-out flex flex-col justify-end p-6 md:p-8">
+                        <div class="translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                            <span class="inline-block px-4 py-2 bg-black/80 backdrop-blur-md border border-white/10 text-white/90 text-[10px] md:text-xs font-semibold tracking-widest uppercase rounded-lg shadow-2xl">
+                                High-Fashion Editorial
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 8 -->
+                <div class="gallery-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                    <img src="https://i.postimg.cc/GmtwMV8z/Convert-to-8K-ULTRA-REALISTIC-PHOTO-202606122053-(1).jpg" alt="Premium Commercial Wardrobe" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-700 ease-out flex flex-col justify-end p-6 md:p-8">
+                        <div class="translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                            <span class="inline-block px-4 py-2 bg-black/80 backdrop-blur-md border border-white/10 text-white/90 text-[10px] md:text-xs font-semibold tracking-widest uppercase rounded-lg shadow-2xl">
+                                Premium Commercial Wardrobe
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 9 -->
+                <div class="gallery-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                    <img src="https://i.postimg.cc/W4Qvq847/18.png" alt="Narrative Location Concept" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-700 ease-out flex flex-col justify-end p-6 md:p-8">
+                        <div class="translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                            <span class="inline-block px-4 py-2 bg-black/80 backdrop-blur-md border border-white/10 text-white/90 text-[10px] md:text-xs font-semibold tracking-widest uppercase rounded-lg shadow-2xl">
+                                Narrative Location Concept
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 10 (Hero Anchor - Spans Columns) -->
+                <div class="gallery-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] md:aspect-[21/9] md:col-span-2 lg:col-span-3 bg-neutral-900 cursor-pointer">
+                    <img src="https://i.postimg.cc/TY2ZwFcS/CAMERA-COMPOSITION-Medium-close-up-202606072025.jpg" alt="Cinematic Atmospheric Key-Light" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-700 ease-out flex flex-col justify-end p-6 md:p-10">
+                        <div class="translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                            <span class="inline-block px-5 py-3 bg-black/80 backdrop-blur-md border border-white/10 text-white/90 text-xs md:text-sm font-bold tracking-widest uppercase rounded-lg shadow-2xl">
+                                Cinematic Atmospheric Key-Light
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- INTERACTIVE ARCHIVE TOGGLE -->
+            <div class="mt-20 flex justify-center">
+                <button onclick="toggleArchive()" class="group flex items-center justify-center gap-3 px-8 py-4 bg-transparent text-white border border-white/20 font-semibold rounded-full hover:border-white hover:bg-white/5 transition-all duration-300 ease-out w-full sm:w-auto">
+                    <span id="toggleText" class="uppercase tracking-wider text-sm">Explore Full Archive</span>
+                    <svg id="toggleIcon" class="w-4 h-4 transition-transform duration-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+            </div>
+
+            <!-- PART 2: THE EXTENDED GALLERY ZONE -->
+            <div id="extendedGallery" class="hidden mt-16 pt-16 border-t border-white/10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Ext Image 1 -->
+                    <div class="ext-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                        <img src="https://i.postimg.cc/RhPW1wfB/1.png" alt="Archive Selection 01" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-700 pointer-events-none"></div>
+                    </div>
+
+                    <!-- Ext Image 2 -->
+                    <div class="ext-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                        <img src="https://i.postimg.cc/44MZc8HT/16.png" alt="Archive Selection 02" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-700 pointer-events-none"></div>
+                    </div>
+
+                    <!-- Ext Image 3 -->
+                    <div class="ext-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                        <img src="https://i.postimg.cc/SxcykWs4/14.png" alt="Archive Selection 03" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-700 pointer-events-none"></div>
+                    </div>
+
+                    <!-- Ext Image 4 -->
+                    <div class="ext-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                        <img src="https://i.postimg.cc/v8PTNL1p/7.png" alt="Archive Selection 04" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-700 pointer-events-none"></div>
+                    </div>
+
+                    <!-- Ext Image 5 -->
+                    <div class="ext-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                        <img src="https://i.postimg.cc/1zZ3qvT4/8.png" alt="Archive Selection 05" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-700 pointer-events-none"></div>
+                    </div>
+
+                    <!-- Ext Image 6 -->
+                    <div class="ext-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] bg-neutral-900 cursor-pointer">
+                        <img src="https://i.postimg.cc/nrMFJgs3/9.png" alt="Archive Selection 06" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-700 pointer-events-none"></div>
+                    </div>
+
+                    <!-- Ext Image 7 (Archive Anchor) -->
+                    <div class="ext-card group relative overflow-hidden rounded-xl border border-white/10 aspect-[4/5] md:aspect-[21/9] md:col-span-2 lg:col-span-3 bg-neutral-900 cursor-pointer">
+                        <img src="https://i.postimg.cc/vTmBmDjY/3.png" alt="Archive Selection 07" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-700 pointer-events-none"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         4. THE CREATIVE PROCESS
+    =========================================== -->
+    <section id="process" class="py-32 px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-5xl font-display font-bold tracking-tight mb-4">The Methodology</h2>
+                <p class="text-white/50 max-w-xl mx-auto">A meticulous three-step pipeline engineered to transform raw concepts into high-fidelity digital masterpieces.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                <!-- Decorative Connecting Line (Desktop) -->
+                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent z-0"></div>
+
+                <!-- Step 1 -->
+                <div class="process-step relative z-10 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 rounded-full bg-black border border-white/20 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(255,255,255,0.05)]">
+                        <span class="text-2xl font-display font-bold text-white/80">01</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">The Vision</h3>
+                    <p class="text-white/60 text-sm leading-relaxed max-w-xs">
+                        Deep-dive client alignment, establishing core style concepts, mood boarding, and definitive wardrobe briefs.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step relative z-10 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 rounded-full bg-black border border-white/20 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(255,255,255,0.05)]">
+                        <span class="text-2xl font-display font-bold text-white/80">02</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">The Art Direction</h3>
+                    <p class="text-white/60 text-sm leading-relaxed max-w-xs">
+                        Crafting the exact character identity, geometric fit, and emphasizing athletic, dynamic silhouettes.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step relative z-10 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 rounded-full bg-black border border-white/20 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(255,255,255,0.05)]">
+                        <span class="text-2xl font-display font-bold text-white/80">03</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">The Masterpiece</h3>
+                    <p class="text-white/60 text-sm leading-relaxed max-w-xs">
+                        Final execution featuring high-resolution rendering, sophisticated micro-texturing, and cinematic lighting delivery.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         5. CONTACT & INQUIRIES (FOOTER)
+    =========================================== -->
+    <footer id="contact" class="py-32 px-6 bg-[#050505] border-t border-white/10 relative overflow-hidden">
+        <!-- Ambient Glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w
